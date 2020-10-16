@@ -1,0 +1,181 @@
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 56px;
+}
+
+nav a {
+  font-size: 20px;
+}
+
+.nav-link:active {
+  color: white !important;
+}
+
+.img-drop {
+  background-image: url(./images/architecture.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+}
+
+.img-drop h1 {
+  padding-top: 5em;
+  padding-bottom: 20px;
+}
+
+.img-drop p {
+  padding: 10px 0;
+}
+
+.smoothscroll {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -29px;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  color: black;
+}
+
+.fa:hover {
+  opacity: 0.7;
+  text-decoration: none;
+}
+
+.about-sect {
+  display: flex;
+  align-items: center;
+  padding: 50px 20px 0 20px;
+  height: 100vh;
+}
+
+.about-sect img {
+  width: 50%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 50%;
+  max-height: 500px;
+}
+
+.about-sect section {
+  padding: 0 30px;
+}
+
+.project-header {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.project-header p {
+  font-size: 25px;
+}
+
+.display-3 {
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+
+.card-img-top:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.column:nth-of-type(1) {
+  width: 50%;
+}
+
+.column:nth-of-type(2) {
+  width: 30%;
+}
+
+input{
+  width: 60%;
+  height: 50px;
+}
+
+textarea {
+  width: 60%;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 5px;
+}
+
+a:active {
+  color: green;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 890px) {
+  .content {
+    display: block;
+  }
+
+  .column:nth-of-type(1), .column:nth-of-type(2), input, textarea  {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about-sect {
+    display: block;
+    text-align: center;
+  }
+
+  .about-sect section {
+    padding: 0;
+  }
+
+  .about-sect h1 {
+    padding-top: 20px;
+  }
+
+  .img-drop, .fa {
+    color: white;
+  }
+}
+
+/* Mobile Screen Size */
+@media screen and (max-width: 480px) {
+  .navbar-nav {
+    margin-top: 10px;
+  }
+
+  .about-sect img {
+    width: 100%;
+  }
+}
